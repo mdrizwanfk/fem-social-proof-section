@@ -11,6 +11,7 @@
   --fw-700: 700;
 
   --fs-500: 1.5rem;
+  --fs-550: 1.8rem;
   --fs-600: 2.6rem;
   --fs-700: 2.9rem;
 
@@ -31,6 +32,12 @@
 @media screen and (min-width: 992px) {
   :root {
     --fs-heading: var(--fs-700);
+    --fs-body: var(--fs-550);
+  }
+
+  /* Utilities */
+  .grid-col-span-2 {
+    grid-column: span 2;
   }
 }
 
@@ -144,7 +151,7 @@ svg {
   text-align: center;
 }
 .attribution a {
-  color: #000;
+  color: var(--clr-primary-2);
 }
 
 body {
@@ -161,7 +168,7 @@ body {
 
 /* Social Proof */
 .sp-grid {
-  margin: 4rem 5rem;
+  margin: 4rem 5rem 1rem;
   min-width: 30rem;
   max-width: 40rem;
   /* width: 35rem; */
@@ -242,6 +249,71 @@ body {
     display: grid;
     gap: 10rem;
     grid-template-columns: repeat(2, 1fr);
-    width: 80%;
+    max-width: 120.4rem;
+    margin-bottom: 4rem;
+  }
+
+  .sp-claim {
+    width: 40rem;
+    text-align: left;
+    margin-bottom: 2.5rem;
+  }
+
+  .sp-claim > h2 {
+    font-weight: var(--fw-700);
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .sp-ratings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sp-ratings > .rating {
+    width: fit-content;
+    padding: 1.5rem 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .sp-ratings > :first-child {
+    align-self: flex-start;
+  }
+
+  .sp-ratings > :nth-child(2) {
+    align-self: center;
+  }
+
+  .sp-ratings > :last-child {
+    align-self: flex-end;
+  }
+
+  .sp-ratings .stars {
+    display: inline-flex;
+    margin: auto;
+    margin-right: 2rem;
+  }
+
+  .sp-ratings img {
+    padding: 0.5rem;
+  }
+
+  .sp-testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .sp-testimonials > :first-child {
+    position: relative;
+    top: -2rem;
+  }
+
+  .sp-testimonials > :last-child {
+    position: relative;
+    top: 2rem;
   }
 }
