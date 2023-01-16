@@ -164,6 +164,10 @@ body {
   font-size: var(--fs-body);
   color: var(--clr-neutral-1);
   background-color: var(--clr-neutral-3);
+  background-image: url(/images/bg-pattern-top-mobile.svg),
+    url(/images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
 }
 
 /* Social Proof */
@@ -243,6 +247,11 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  body {
+    background-image: url(/images/bg-pattern-top-desktop.svg),
+      url(/images/bg-pattern-bottom-desktop.svg);
+  }
+
   /* Layout */
   .sp-grid {
     max-width: none;
