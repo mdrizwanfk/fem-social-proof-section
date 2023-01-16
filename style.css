@@ -183,7 +183,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.sp-claim > h2 {
+.sp-claim > h1 {
   font-weight: var(--fw-700);
   font-size: var(--fs-heading);
   line-height: 2.5rem;
@@ -268,7 +268,7 @@ body {
     margin-bottom: 2.5rem;
   }
 
-  .sp-claim > h2 {
+  .sp-claim > h1 {
     font-weight: var(--fw-700);
     font-size: 5rem;
     line-height: 5rem;
