@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Social proof section</title>
   </head>
   <body>
     <main class="sp-grid">
-      <article class="sp-claim">
+      <article class="sp-claim text-clr-primary-1">
         <h2>10,000+ of our users love our products.</h2>
         <p>
           We only provide great products combined with excellent customer
@@ -24,58 +29,88 @@
         </p>
       </article>
       <article class="sp-ratings">
-        <article class="rating">Rated 5 Stars in Reviews</article>
-        <article class="rating">Rated 5 Stars in Report Guru</article>
-        <article class="rating">Rated 5 Stars in BestTech</article>
+        <article class="rating bg-clr-neutral-2 text-clr-primary-1">
+          <span class="stars"
+            ><img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" /> </span
+          >Rated 5 Stars in Reviews
+        </article>
+        <article class="rating bg-clr-neutral-2 text-clr-primary-1">
+          <span class="stars"
+            ><img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" /> </span
+          >Rated 5 Stars in Report Guru
+        </article>
+        <article class="rating bg-clr-neutral-2 text-clr-primary-1">
+          <span class="stars"
+            ><img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" />
+            <img src="/images/icon-star.svg" alt="5-star-rating" /> </span
+          >Rated 5 Stars in BestTech
+        </article>
       </article>
       <article class="sp-testimonials">
-        <article class="testimonial">
+        <article class="testimonial bg-clr-primary-1 text-clr-neutral-3">
           <div class="person">
             <img
               src="/images/image-colton.jpg"
               alt="Colton Smith"
               class="avatar"
             />
-            <h3 class="name">Colton Smith</h3>
-            <h4 class="badge">Verified Buyer</h4>
-            <p class="comment">
-              "We needed the same printed design as the one we had ordered a
-              week prior. Not only did they find the original order, but we also
-              received it in time. Excellent!"
-            </p>
+            <div class="details">
+              <h3 class="name">Colton Smith</h3>
+              <h4 class="badge text-clr-primary-2">Verified Buyer</h4>
+            </div>
           </div>
+          <p class="comment">
+            "We needed the same printed design as the one we had ordered a week
+            prior. Not only did they find the original order, but we also
+            received it in time. Excellent!"
+          </p>
         </article>
-        <article class="testimonial">
+        <article class="testimonial bg-clr-primary-1 text-clr-neutral-3">
           <div class="person">
             <img
               src="/images/image-irene.jpg"
               alt="Irene Roberts"
               class="avatar"
             />
-            <h3 class="name">Irene Roberts</h3>
-            <h4 class="badge">Verified Buyer</h4>
-            <p class="comment">
-              "Customer service is always excellent and very quick turn around.
-              Completely delighted with the simplicity of the purchase and the
-              speed of delivery."
-            </p>
+            <div class="details">
+              <h3 class="name">Irene Roberts</h3>
+              <h4 class="badge text-clr-primary-2">Verified Buyer</h4>
+            </div>
           </div>
+          <p class="comment">
+            "Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery."
+          </p>
         </article>
-        <article class="testimonial">
+        <article class="testimonial bg-clr-primary-1 text-clr-neutral-3">
           <div class="person">
             <img
               src="/images/image-anne.jpg"
               alt="Anne Wallace"
               class="avatar"
             />
-            <h3 class="name">Anne Wallace</h3>
-            <h4 class="badge">Verified Buyer</h4>
-            <p class="comment">
-              "Put an order with this company and can only praise them for the
-              very high standard. Will definitely use them again and recommend
-              them to everyone!"
-            </p>
+            <div class="details">
+              <h3 class="name">Anne Wallace</h3>
+              <h4 class="badge text-clr-primary-2">Verified Buyer</h4>
+            </div>
           </div>
+          <p class="comment">
+            "Put an order with this company and can only praise them for the
+            very high standard. Will definitely use them again and recommend
+            them to everyone!"
+          </p>
         </article>
       </article>
     </main>
